@@ -38,9 +38,12 @@ print(eval("x-y"))
 ## Exemplo 2 do enunciado do EP
 a = 0
 b = 1
-c = "0"
-d = "1 - pow(x,2)"
-f = "1"
+funcaoC = "0"
+funcaoD = "1 - pow(x,2)"
+funcaoXY = "1"
+
+##isto nao funciona
+##print(eval(d-f))
 
 #t = n6[0][1]
 #x = "((b-a)*t + a + b)/2"
@@ -48,15 +51,21 @@ f = "1"
 #comentado so pra vc lembrar que isso funciona
 #print(eval(f)+1)
 
-n=6
+n = 6
 resultado = 0
+funcaoX = "((b-a)*t + a + b)/2"
+funcaoY = "((d-c)*s + c + d)/2"
+
 for i in range (0,n-1):
     fMaiusculo = 0
     t = n6[i][1]
     for j in range (0,n-1):
         s = n6[j][1]
-        x = "((b-a)*t + a + b)/2"
-        fMaiusculo = fMaiusculo + n6[i][j] * eval() * eval()
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC) 
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n6[j][0] * eval(funcaoXY) * (d-c)
     resultado = resultado + n6[i][0] * fMaiusculo
 
 #resultado = resultado * (b-a) / 4
