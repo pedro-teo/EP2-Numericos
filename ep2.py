@@ -23,3 +23,37 @@ n10 = [[-0.9739065285171717200779640,0.0666713443086881375935688],[-0.8650633666
 #print(n6)
 #print(n6[2][1])
 #print(n10[9][:])
+
+x = 3
+y = 4
+print(eval("np.sqrt(pow(x,2)+pow(y,2))"))
+print(eval("x-y"))
+
+## Input do usuario dos limites de integracao
+#a = int(input("Qual o valor do limite de integracao a? "))
+#b = int(input("Qual o valor do limite de integracao b? "))
+#c = input("Qual a funcao c(x) do limite inferior? ")
+#d = input("Qual a funcao d(x) do limite superior? ")
+
+## Exemplo 2 do enunciado do EP
+a = 0
+b = 1
+c = "0"
+d = "1 - pow(x,2)"
+
+f = "1"
+
+print(eval(f)+1)
+
+n=6
+resultado = 0
+for i in range (0,n-1):
+    fMaiusculo = 0
+    for j in range (0,n-1):
+        
+        fMaiusculo = fMaiusculo + n6[i][j] * eval() * eval()
+
+resultado = resultado * (b-a) / 4
+print(resultado)
+
+
