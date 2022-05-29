@@ -24,10 +24,10 @@ n10 = [[-0.9739065285171717200779640,0.0666713443086881375935688],[-0.8650633666
 #print(n6[2][1])
 #print(n10[9][:])
 
-x = 3
-y = 4
-print(eval("np.sqrt(pow(x,2)+pow(y,2))"))
-print(eval("x-y"))
+#x = 3
+#y = 4
+#print(eval("np.sqrt(pow(x,2)+pow(y,2))"))
+#print(eval("x-y"))
 
 ## Input do usuario dos limites de integracao
 #a = int(input("Qual o valor do limite de integracao a? "))
@@ -56,19 +56,106 @@ resultado = 0
 funcaoX = "((b-a)*t + a + b)/2"
 funcaoY = "((d-c)*s + c + d)/2"
 
-for i in range (0,n-1):
+for i in range (0,n):
     fMaiusculo = 0
-    t = n6[i][1]
-    for j in range (0,n-1):
-        s = n6[j][1]
+    t = n6[i][0]
+    for j in range (0,n):
+        s = n6[j][0]
         x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
         c = eval(funcaoC) 
         d = eval(funcaoD)
         y = eval(funcaoY)
-        fMaiusculo = fMaiusculo + n6[j][0] * eval(funcaoXY) * (d-c)
-    resultado = resultado + n6[i][0] * fMaiusculo
+        fMaiusculo = fMaiusculo + n6[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n6[i][1] * fMaiusculo
 
-#resultado = resultado * (b-a) / 4
-#print(resultado)
+resultado = resultado * (b-a) / 4
+print(resultado)
 
 
+
+n = 8
+resultado = 0
+for i in range (0,n):
+    fMaiusculo = 0
+    t = n8[i][0]
+    for j in range (0,n):
+        s = n8[j][0]
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC) 
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n8[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n8[i][1] * fMaiusculo
+
+resultado = resultado * (b-a) / 4
+print(resultado)
+
+n = 10
+resultado = 0
+for i in range (0,n):
+    fMaiusculo = 0
+    t = n10[i][0]
+    for j in range (0,n):
+        s = n10[j][0]
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC)
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n10[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n10[i][1] * fMaiusculo
+
+resultado = resultado * (b-a) / 4
+print(resultado)
+
+# teste da funcao x + 2 + y
+n = 6
+resultado = 0
+funcaoX = "((b-a)*t + a + b)/2"
+funcaoY = "((d-c)*s + c + d)/2"
+a = 0
+b = 1
+funcaoC = "0"
+funcaoD = "1"
+funcaoXY = "x + 2 + y"
+
+for i in range (0,n):
+    fMaiusculo = 0
+    t = n6[i][0]
+    for j in range (0,n):
+        s = n6[j][0]
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC) 
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n6[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n6[i][1] * fMaiusculo
+
+resultado = resultado * (b-a) / 4
+print(resultado)
+
+
+# teste da funcao x + 2 + y
+n = 8
+resultado = 0
+funcaoX = "((b-a)*t + a + b)/2"
+funcaoY = "((d-c)*s + c + d)/2"
+a = 0
+b = 1
+funcaoC = "0"
+funcaoD = "1"
+funcaoXY = "x + 2 + y"
+
+for i in range (0,n):
+    fMaiusculo = 0
+    t = n8[i][0]
+    for j in range (0,n):
+        s = n8[j][0]
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC) 
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n8[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n8[i][1] * fMaiusculo
+
+resultado = resultado * (b-a) / 4
+print(resultado)
