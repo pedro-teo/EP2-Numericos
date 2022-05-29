@@ -40,20 +40,26 @@ a = 0
 b = 1
 c = "0"
 d = "1 - pow(x,2)"
-
 f = "1"
 
-print(eval(f)+1)
+#t = n6[0][1]
+#x = "((b-a)*t + a + b)/2"
+#print(eval(x))
+#comentado so pra vc lembrar que isso funciona
+#print(eval(f)+1)
 
 n=6
 resultado = 0
 for i in range (0,n-1):
     fMaiusculo = 0
+    t = n6[i][1]
     for j in range (0,n-1):
-        
+        s = n6[j][1]
+        x = "((b-a)*t + a + b)/2"
         fMaiusculo = fMaiusculo + n6[i][j] * eval() * eval()
+    resultado = resultado + n6[i][0] * fMaiusculo
 
-resultado = resultado * (b-a) / 4
-print(resultado)
+#resultado = resultado * (b-a) / 4
+#print(resultado)
 
 
