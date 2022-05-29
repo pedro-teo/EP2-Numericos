@@ -1,0 +1,22 @@
+###     MAP3121 - Calculo Numerico - Escola Politecnica                  ###
+###     Tarefa 2 - Formulas de Integracao Numerica de Gauss              ###
+
+###     Alunos deste grupo:                                              ###       
+###     Fabio Akira Yonamine   - NUSP 11805398                           ###
+###     Pedro H. Teodoro Silva - NUSP 11805314                           ###
+
+
+Prezados docentes, 
+
+Tal como instruido no PDF de instrucoes deste segundo Exercicio-Programa, 
+fez-se uso das seguintes ferramentas, que devem estar corretamente instaladas
+no computador para compilacao e uso:
+
+- Python 3.7 para redigir o algoritmo, em geral
+- Biblioteca Numpy, para calculos basicos com matrizes
+
+Para rodar este codigo e de fato testa-lo, um modo intuitivo envolve utilizar o
+programa Visual Studio Code (tambem conhecido como VSCode), disponivel para todas
+as plataformas, e abrir o arquivo EP2.py por meio deste. No proprio programa, 
+quando se abre um codigo em linguagem Python, ha um icone "Play" no canto superior
+direito, que roda o codigo aberto.
