@@ -159,3 +159,30 @@ for i in range (0,n):
 
 resultado = resultado * (b-a) / 4
 print(resultado)
+
+
+#teste do ex 3
+n = 8
+resultado = 0
+funcaoX = "((b-a)*t + a + b)/2"
+funcaoY = "((d-c)*s + c + d)/2"
+a = 0.1
+b = 0.5
+funcaoC = "pow(x,3)"
+funcaoD = "pow(x,2)"
+funcaoXY = "np.sqrt(pow((-y/x)*np.exp(y/x),2)+pow(np.exp(y/x)/x,2)+1)"
+
+for i in range (0,n):
+    fMaiusculo = 0
+    t = n8[i][0]
+    for j in range (0,n):
+        s = n8[j][0]
+        x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+        c = eval(funcaoC) 
+        d = eval(funcaoD)
+        y = eval(funcaoY)
+        fMaiusculo = fMaiusculo + n8[j][1] * eval(funcaoXY) * (d-c)
+    resultado = resultado + n8[i][1] * fMaiusculo
+
+resultado = resultado * (b-a) / 4
+print(resultado)
