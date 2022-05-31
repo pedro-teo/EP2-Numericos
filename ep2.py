@@ -30,6 +30,7 @@ n10 = [[-0.9739065285171717200779640,0.0666713443086881375935688],[-0.8650633666
 #print(eval("x-y"))
 
 ## Input do usuario dos limites de integracao
+#option = int(input("Qual a variavel de integracao da integral mais interna? "))
 #a = int(input("Qual o valor do limite de integracao a? "))
 #b = int(input("Qual o valor do limite de integracao b? "))
 #c = input("Qual a funcao c(x) do limite inferior? ")
