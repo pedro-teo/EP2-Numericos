@@ -50,15 +50,41 @@ def main():
         print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        ## ATE AQUI ta certo, para dy dx.
 
         a = 0
         b = 1
         funcaoC = "0"
         funcaoD = "np.sqrt(1-y)"
         funcaoXY = "1"
-        
-        
 
+        n = 10
+        resultado = 0
+        n10 = np.zeros((10,2))
+        n10 = [[-0.9739065285171717200779640,0.0666713443086881375935688],[-0.8650633666889845107320967,0.1494513491505805931457763],[-0.6794095682990244062343274,0.2190863625159820439955349],[-0.4333953941292471907992659,0.2692667193099963550912269],[-0.1488743389816312108848260,0.2955242247147528701738930],[0.1488743389816312108848260,0.2955242247147528701738930],[0.4333953941292471907992659,0.2692667193099963550912269],[0.6794095682990244062343274,0.2190863625159820439955349],[0.8650633666889845107320967,0.1494513491505805931457763],[0.9739065285171717200779640,0.0666713443086881375935688]]
+        
+        funcaoY = "((b-a)*t + a + b)/2"
+        funcaoX = "((d-c)*s + c + d)/2"
+        for i in range (0,n):
+            fMaiusculo = 0
+            t = n10[i][0]
+            for j in range (0,n):
+                s = n10[j][0]
+                x = eval(funcaoX)
+                
+                d = eval(funcaoD)
+                c = eval(funcaoC) 
+                 # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                y = eval(funcaoY)
+                #aux = x
+                #x = y
+                #y = aux
+
+                fMaiusculo = fMaiusculo + n10[j][1] * eval(funcaoXY) * (d-c)
+            resultado = resultado + n10[i][1] * fMaiusculo
+        resultado = resultado * (b-a) / 4
+
+        print(resultado)
 
     elif(opcaoDesejada==3):
         print("precisa fazer essa ainda!!!!")
