@@ -10,13 +10,8 @@ import numpy as np
 
 ##isto nao funciona
 ##print(eval(d-f))
-
-#t = n6[0][1]
-#x = "((b-a)*t + a + b)/2"
-#print(eval(x))
 #comentado so pra vc lembrar que isso funciona
 #print(eval(f)+1)
-
 
 def main():
     ##  Menu de selecao do usuario.  ##
@@ -96,8 +91,21 @@ def main():
         print("precisa ser feito ainda!!!!!")
 
     elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
-        print("precisa fazer essa ainda!!!!")
+        print("")
         
+        print("Calculo da calota esferica descrita:")
+        a = 0
+        b = 1/4
+        funcaoC = "0"
+        funcaoD = "np.sqrt(1-pow(y+3/4,2))"
+        funcaoXY = "2*x*np.pi"
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
+
+        print("Calculo do volume da regiao descrita:")
+        print("precisa ser feito ainda!!!!!")
     
     elif(opcaoDesejada==5):
         a = np.exp(-1)
