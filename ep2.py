@@ -73,7 +73,7 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
-    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ##
+    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ## ## CHECK ##
         print("")
         
         print("Calculo da area da regiao descrita:")
@@ -88,7 +88,15 @@ def main():
         print("")
         
         print("Calculo do volume da regiao descrita:")
-        print("precisa ser feito ainda!!!!!")
+        a = 0.1
+        b = 0.5
+        funcaoC = "pow(x,3)"
+        funcaoD = "pow(x,2)"
+        funcaoXY = "np.exp(y/x)"
+        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
 
     elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
         print("")
