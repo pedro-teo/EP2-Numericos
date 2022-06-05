@@ -79,25 +79,21 @@ def main():
         print("")
 
     elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ##
-        print("precisa fazer essa ainda!!!!")
-
-        a = 0
-        b = np.exp(-1)
-        funcaoC = "-1"
-        funcaoD = "np.exp(-pow(x,2))"
-        funcaoXY = "x"
+        print("")
+        
+        print("Calculo da area da regiao descrita:")
+        a = 0.1
+        b = 0.5
+        funcaoC = "pow(x,3)"
+        funcaoD = "pow(x,2)"
+        funcaoXY = "np.sqrt(( (pow(y,2)/pow(x,4))*np.exp(2*y/x) + np.exp(2*y/x)/pow(x,2) + 1 ))"
         print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
-
-        a = np.exp(-1)
-        b = 1
-        funcaoC = "-1"
-        funcaoD = "np.exp(-pow(x,2))"
-        funcaoXY = "x"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
+        
+        print("Calculo do volume da regiao descrita:")
+        print("precisa ser feito ainda!!!!!")
 
     elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
         print("precisa fazer essa ainda!!!!")
