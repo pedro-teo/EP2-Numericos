@@ -218,7 +218,7 @@ def calculaIntegralDuplaDyDx (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n6[i][0]
             for j in range (0,n):
                 s = n6[j][0]
-                x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                x = eval(funcaoX)
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 y = eval(funcaoY)
@@ -233,7 +233,7 @@ def calculaIntegralDuplaDyDx (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n8[i][0]
             for j in range (0,n):
                 s = n8[j][0]
-                x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                x = eval(funcaoX) 
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 y = eval(funcaoY)
@@ -248,7 +248,7 @@ def calculaIntegralDuplaDyDx (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n10[i][0]
             for j in range (0,n):
                 s = n10[j][0]
-                x = eval(funcaoX) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                x = eval(funcaoX)
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 y = eval(funcaoY)
@@ -292,7 +292,7 @@ def calculaIntegralDuplaDxDy (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n6[i][0]
             for j in range (0,n):
                 s = n6[j][0]
-                y = eval(funcaoY) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                y = eval(funcaoY)
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 x = eval(funcaoX)
@@ -307,7 +307,7 @@ def calculaIntegralDuplaDxDy (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n8[i][0]
             for j in range (0,n):
                 s = n8[j][0]
-                y = eval(funcaoY) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                y = eval(funcaoY)
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 x = eval(funcaoX)
@@ -322,7 +322,7 @@ def calculaIntegralDuplaDxDy (n,a,b,funcaoC,funcaoD,funcaoXY):
             t = n10[i][0]
             for j in range (0,n):
                 s = n10[j][0]
-                y = eval(funcaoY) # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
+                y = eval(funcaoY)
                 c = eval(funcaoC) 
                 d = eval(funcaoD)
                 x = eval(funcaoX)
