@@ -8,16 +8,6 @@
 ## Importacao da biblioteca numpy, com abreviacao np
 import numpy as np
 
-#so pra lembrar como chamar uma linha/casa especifica
-#n6 = [[1,2],[2,3],[4,3],[5,4],[2,3],[1,2]]
-#print(n6)
-#print(n6[2][1])
-#print(n10[9][:])
-
-
-## Input do usuario dos limites de integracao
-##option = int(input("Qual a variavel de integracao da integral mais interna? "))
-
 ##isto nao funciona
 ##print(eval(d-f))
 
@@ -67,19 +57,13 @@ def main():
         funcaoX = "((d-c)*s + c + d)/2"
         for i in range (0,n):
             fMaiusculo = 0
-            t = n10[i][0]
+            s = n10[i][0]
             for j in range (0,n):
-                s = n10[j][0]
-                x = eval(funcaoX)
-                
+                t = n10[j][0]
+                y = eval(funcaoY)
                 d = eval(funcaoD)
                 c = eval(funcaoC) 
-                 # x precisa ser obtido antes, porque ele vai em c(x) e d(x), que vao entao pra y 
-                y = eval(funcaoY)
-                #aux = x
-                #x = y
-                #y = aux
-
+                x = eval(funcaoX)
                 fMaiusculo = fMaiusculo + n10[j][1] * eval(funcaoXY) * (d-c)
             resultado = resultado + n10[i][1] * fMaiusculo
         resultado = resultado * (b-a) / 4
@@ -88,6 +72,24 @@ def main():
 
     elif(opcaoDesejada==3):
         print("precisa fazer essa ainda!!!!")
+
+        a = 0
+        b = np.exp(-1)
+        funcaoC = "-1"
+        funcaoD = "np.exp(-pow(x,2))"
+        funcaoXY = "x"
+        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+
+        a = np.exp(-1)
+        b = 1
+        funcaoC = "-1"
+        funcaoD = "np.exp(-pow(x,2))"
+        funcaoXY = "x"
+        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
 
     elif(opcaoDesejada==4):
         print("precisa fazer essa ainda!!!!")
