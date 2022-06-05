@@ -31,7 +31,7 @@ def main():
         print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
-        print("")
+        print("Observe que, analiticamente, o valor do volume do cubo deveria ser exato,\n igual a 1, tal como consta no enunciado do exercicio.\n")
 
         print("Volume do tetraedro")
         a = 0
@@ -68,6 +68,8 @@ def main():
         print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
+
+        print("Observe que, analiticamente, o valor das duas integrais calculadas acima\ndeveria ser exato, igual a 2/3, tal como consta no enunciado do exercicio.\n")
 
     elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ## ## CHECKCHECK ##
         print("")
