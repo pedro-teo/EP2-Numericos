@@ -122,7 +122,7 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
     
-    elif(opcaoDesejada==5): 
+    elif(opcaoDesejada==5): ##  Executa os calculos inputados pelo usuario diretamente no codigo. ##
         ##  Esta funcao executa a integral dupla inputada diretamente, nas linhas abaixo.         ##
 
         ##  Os campos a e b sao os limites inferior e superior, respectivamente, da integral      ##
@@ -169,7 +169,7 @@ def main():
             print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
-    elif(opcaoDesejada==6):
+    elif(opcaoDesejada==6): ##  Executa os calculos inputados pelo usuario na execucao do codigo. ##
         print("\nPreencha agora os campos a, b, c e d, assim como a funcao a ser integrada.\nLembre-se que a e b sao sempre valores numericos, e as funcoes c e d devem\nser inputadas como se voce estivesse digitando-as diretamente no codigo,\npara que o programa transforme-as depois em valores numericos corretamente.\nPor exemplo, x ao quadrado deve ser inserido como pow(x,2). Alem disso,\nqualquer constante eventualmente presente na integral dupla deve ser\nincorporada e inserida na funcao a ser integrada. ATENCAO!!\n")
         limiteInterno = int(input("A integral mais interna eh em relacao a x ou y? Digite 1 para x, ou 2 para y: "))
         a = int(input("Qual o valor do limite de integracao externo inferior a? "))
