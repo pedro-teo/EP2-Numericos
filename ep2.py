@@ -28,9 +28,9 @@ def main():
         funcaoC = "0"
         funcaoD = "1"
         funcaoXY = "1"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("Observe que, analiticamente, o valor do volume do cubo deveria ser exato,\n igual a 1, tal como consta no enunciado do exercicio.\n")
 
         print("Volume do tetraedro")
@@ -39,9 +39,9 @@ def main():
         funcaoC = "0"
         funcaoD = "1-x"
         funcaoXY = "1-x-y"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("Observe que, analiticamente, o valor do volume do cubo deveria ser exato,\n igual a 1/6.\n")
 
     elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ## ## CHECKCHECK ##
@@ -53,9 +53,9 @@ def main():
         funcaoC = "0"
         funcaoD = "1 - pow(x,2)"
         funcaoXY = "1"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
         print("Area A, considerando a segunda integral com limites em dxdy, nesta ordem: ")
@@ -80,9 +80,9 @@ def main():
         funcaoC = "pow(x,3)"
         funcaoD = "pow(x,2)"
         funcaoXY = "np.sqrt(( (pow(y,2)/pow(x,4))*np.exp(2*y/x) + np.exp(2*y/x)/pow(x,2) + 1 ))"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
         
         print("Calculo do volume da regiao descrita:")
@@ -91,9 +91,9 @@ def main():
         funcaoC = "pow(x,3)"
         funcaoD = "pow(x,2)"
         funcaoXY = "np.exp(y/x)"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
     elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
@@ -128,13 +128,13 @@ def main():
         funcaoC = "-1"
         funcaoD = "np.exp(-pow(x,2))"
         funcaoXY = "x"
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         
-        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
 
     elif(opcaoDesejada==6):
         a = int(input("Qual o valor do limite de integracao a? "))
@@ -152,7 +152,7 @@ def main():
             print("Opcao invalida para a integral mais interna. Tente novamente!")
 
 ##  Funcao que resolve integrais duplas, com limite dydx, obrigatoriamente nesta ordem.  ##
-def calculaIntegralDupla (n,a,b,funcaoC,funcaoD,funcaoXY):
+def calculaIntegralDuplaDyDx (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Armazenamento dos valores para n = 6,8 e 10, fornecidos nas instrucoes.  ## 
     n6 = np.zeros((6,2))
     n6 = [[-0.9324695142031520278123016,0.1713244923791703450402961],[-0.6612093864662645136613996,0.3607615730481386075698335],[-0.2386191860831969086305017,0.4679139345726910473898703],[0.2386191860831969086305017,0.4679139345726910473898703],[0.6612093864662645136613996,0.3607615730481386075698335],[0.9324695142031520278123016,0.1713244923791703450402961]]
