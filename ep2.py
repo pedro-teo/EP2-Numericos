@@ -73,7 +73,7 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
-    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ## ## CHECK ##
+    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ## ## CHECKCHECK ##
         print("")
         
         print("Calculo da area da regiao descrita:")
@@ -101,7 +101,7 @@ def main():
     elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
         print("")
         
-        print("Calculo da calota esferica descrita:")
+        print("Calculo do volume da calota esferica descrita:")
         a = 0
         b = 1/4
         funcaoC = "0"
@@ -112,8 +112,17 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
-        print("Calculo do volume da regiao descrita:")
+        print("Calculo do volume do solido de revolucao descrito:")
         print("precisa ser feito ainda!!!!!")
+        a = 0
+        b = 1/4
+        funcaoC = "0"
+        funcaoD = "np.sqrt(1-pow(y+3/4,2))"
+        funcaoXY = "2*x*np.pi"
+        print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
     
     elif(opcaoDesejada==5):
         a = np.exp(-1)
