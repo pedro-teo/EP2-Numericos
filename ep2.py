@@ -109,7 +109,7 @@ def main():
         print("")
 
         print("Calculo do volume do solido de revolucao descrito:")
-        print("precisa ser feito ainda!!!!!")
+        print("Check aqui??")
         a = -1
         b = 1
         funcaoC = "0"
