@@ -42,7 +42,7 @@ def main():
         print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
-        print("")
+        print("Observe que, analiticamente, o valor do volume do cubo deveria ser exato,\n igual a 1/6.\n")
 
     elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ## ## CHECKCHECK ##
         print("")
