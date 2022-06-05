@@ -114,10 +114,10 @@ def main():
 
         print("Calculo do volume do solido de revolucao descrito:")
         print("precisa ser feito ainda!!!!!")
-        a = 0
-        b = 1/4
+        a = -1
+        b = 1
         funcaoC = "0"
-        funcaoD = "np.sqrt(1-pow(y+3/4,2))"
+        funcaoD = "np.exp(-pow(y,2))"
         funcaoXY = "2*x*np.pi"
         print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
