@@ -28,10 +28,10 @@ def main():
     print("Opcao 6: Calculo de uma integral dupla a ser inputada.")
     opcaoDesejada = int(input("Digite a opcao desejada: "))
 
-    if(opcaoDesejada==1):
+    if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ##
         print("precisa fazer essa ainda!!!!")
 
-    elif(opcaoDesejada==2):
+    elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ##
         a = 0
         b = 1
         funcaoC = "0"
@@ -70,7 +70,7 @@ def main():
 
         print(resultado)
 
-    elif(opcaoDesejada==3):
+    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ##
         print("precisa fazer essa ainda!!!!")
 
         a = 0
@@ -91,7 +91,7 @@ def main():
         print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
 
-    elif(opcaoDesejada==4):
+    elif(opcaoDesejada==4): ##  Executa os calculos do Exemplo 4.  ##
         print("precisa fazer essa ainda!!!!")
     
     elif(opcaoDesejada==5):
