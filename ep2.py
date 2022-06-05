@@ -28,8 +28,9 @@ def main():
     print("Opcao 6: Calculo de uma integral dupla a ser inputada.")
     opcaoDesejada = int(input("Digite a opcao desejada: "))
 
-    if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ##
+    if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ## ## CHECK ##
         print("")
+
         print("Volume do cubo")
         a = 0
         b = 1
@@ -52,7 +53,7 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
 
-    elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ##
+    elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ## ## CHECK ##
         a = 0
         b = 1
         funcaoC = "0"
