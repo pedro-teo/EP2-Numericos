@@ -29,7 +29,28 @@ def main():
     opcaoDesejada = int(input("Digite a opcao desejada: "))
 
     if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ##
-        print("precisa fazer essa ainda!!!!")
+        print("")
+        print("Volume do cubo")
+        a = 0
+        b = 1
+        funcaoC = "0"
+        funcaoD = "1"
+        funcaoXY = "1"
+        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
+
+        print("Volume do tetraedro")
+        a = 0
+        b = 1
+        funcaoC = "0"
+        funcaoD = "1-x"
+        funcaoXY = "1-x-y"
+        print("Para n = 6,  integral = ", calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 8,  integral = ", calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
+        print("Para n = 10, integral = ", calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
 
     elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ##
         a = 0
