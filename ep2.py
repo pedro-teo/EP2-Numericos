@@ -19,7 +19,7 @@ def main():
     print("Opcao 6: Calculo de uma integral dupla a ser inputada na execucao do programa.")
     opcaoDesejada = int(input("Digite a opcao desejada: "))
 
-    if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ## ## CHECKCHECK ##
+    if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ##
         print("")
 
         print("Volume do cubo")
@@ -44,7 +44,7 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("Observe que, analiticamente, o valor do volume do cubo deveria ser exato,\n igual a 1/6.\n")
 
-    elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ## ## CHECKCHECK ##
+    elif(opcaoDesejada==2): ##  Executa os calculos do Exemplo 2.  ##
         print("")
 
         print("Area A, considerando a primeira integral com limites em dydx, nesta ordem: ")
@@ -71,7 +71,7 @@ def main():
 
         print("Observe que, analiticamente, o valor das duas integrais calculadas acima\ndeveria ser exato, igual a 2/3, tal como consta no enunciado do exercicio.\n")
 
-    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ## ## CHECKCHECK ##
+    elif(opcaoDesejada==3): ##  Executa os calculos do Exemplo 3.  ##
         print("")
         
         print("Calculo da area da regiao descrita:")
@@ -170,7 +170,7 @@ def main():
 
     elif(opcaoDesejada==6): ##  Executa os calculos inputados pelo usuario na execucao do codigo. ##
         print("\nPreencha agora os campos a, b, c e d, assim como a funcao a ser integrada.\nLembre-se que a e b sao sempre valores numericos, e as funcoes c e d devem\nser inputadas como se voce estivesse digitando-as diretamente no codigo,\npara que o programa transforme-as depois em valores numericos corretamente.\nPor exemplo, x ao quadrado deve ser inserido como pow(x,2). Alem disso,\nqualquer constante eventualmente presente na integral dupla deve ser\nincorporada e inserida na funcao a ser integrada. ATENCAO!!")
-        print("Tambem eh importante notar que, 'e^k' deve ser escrito como 'np.exp(k)' e 'pi' deve ser escrito como 'np.pi'")
+        print("Tambem eh importante notar que, 'e^k' deve ser escrito como 'np.exp(k)'\ne 'pi' deve ser escrito como 'np.pi'\n")
         limiteInterno = int(input("A integral mais interna eh em relacao a x ou y? Digite 1 para x, ou 2 para y: "))
         a = int(input("Qual o valor do limite de integracao externo inferior a? "))
         b = int(input("Qual o valor do limite de integracao externo superior b? "))
