@@ -8,11 +8,7 @@
 ## Importacao da biblioteca numpy, com abreviacao np
 import numpy as np
 
-##isto nao funciona
-##print(eval(d-f))
-#comentado so pra vc lembrar que isso funciona
-#print(eval(f)+1)
-
+##  Funcao principal.  ##
 def main():
     ##  Menu de selecao do usuario.  ##
     print("Opcao 1: Calculo do exercicio 1.")
@@ -153,6 +149,7 @@ def main():
         else:
             print("Opcao invalida para a integral mais interna. Tente novamente!")
 
+##  Funcao que resolve integrais duplas, com limite dydx, obrigatoriamente nesta ordem.  ##
 def calculaIntegralDupla (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Armazenamento dos valores para n = 6,8 e 10, fornecidos nas instrucoes.  ## 
     n6 = np.zeros((6,2))
@@ -226,6 +223,7 @@ def calculaIntegralDupla (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Retorna o resultado para a chamada de funcao.  ##
     return resultado
 
+##  Funcao que resolve integrais duplas, com limite dxdy, obrigatoriamente nesta ordem.  ##
 def calculaIntegralDuplaDxDy (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Armazenamento dos valores para n = 6,8 e 10, fornecidos nas instrucoes.  ## 
     n6 = np.zeros((6,2))
@@ -299,5 +297,6 @@ def calculaIntegralDuplaDxDy (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Retorna o resultado para a chamada de funcao.  ##
     return resultado
 
+##  Comanda o programa a voltar para a funcao main.  ##
 if __name__ == '__main__':
     main()
