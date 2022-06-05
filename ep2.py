@@ -142,7 +142,7 @@ def main():
         funcaoC = input("Qual a funcao c(x) do limite inferior? ")
         funcaoD = input("Qual a funcao d(x) do limite superior? ")
         funcaoXY = input("Qual a funcao em termos de X e Y que se deseja integrar? ")
-        limiteInterno = input("A integral mais interna eh em relacao a X ou Y? Digite 1 para X, ou 2 para Y: ")
+        limiteInterno = int(input("A integral mais interna eh em relacao a X ou Y? Digite 1 para X, ou 2 para Y: "))
 
         if (limiteInterno == 1):
             print("ola")
