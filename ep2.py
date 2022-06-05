@@ -15,8 +15,8 @@ def main():
     print("Opcao 2: Calculo do exercicio 2.")
     print("Opcao 3: Calculo do exercicio 3.")
     print("Opcao 4: Calculo do exercicio 4.")
-    print("Opcao 5: Calculo de uma integral simples a ser inputada.")
-    print("Opcao 6: Calculo de uma integral dupla a ser inputada.")
+    print("Opcao 5: Calculo de uma integral dupla inputada diretamente no codigo.")
+    print("Opcao 6: Calculo de uma integral dupla a ser inputada na execucao do programa.")
     opcaoDesejada = int(input("Digite a opcao desejada: "))
 
     if(opcaoDesejada==1): ##  Executa os calculos do Exemplo 1.  ## ## CHECKCHECK ##
@@ -122,34 +122,73 @@ def main():
         print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
         print("")
     
-    elif(opcaoDesejada==5):
-        a = np.exp(-1)
-        b = 1
-        funcaoC = "-1"
-        funcaoD = "np.exp(-pow(x,2))"
-        funcaoXY = "x"
-        print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
+    elif(opcaoDesejada==5): 
+        ##  Esta funcao executa a integral dupla inputada diretamente, nas linhas abaixo.         ##
+
+        ##  Os campos a e b sao os limites inferior e superior, respectivamente, da integral      ##
+        ##  mais externa. Lembre-se que a e b sao sempre valores numericos.                       ##
+
+        ##  Os campos funcaoC e funcaoD sao os limites inferior e superior, respectivamente,      ##
+        ##  da integral mais interna. 
         
-        print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
-        print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
+        ##  O campo funcaoXY eh a funcao a ser integrada. Lembre-se de incorporar nesta           ##
+        ##  variavel qualquer constante que seja parte da integral dupla que se deseja calcular.  ##
+
+        ##  O campo limiteInterno deve ser 1 para o caso em que a integral mais interna eh em     ##
+        ##  relacao a x, e 2 para o caso em que eh em relacao a y.                                ##
+                
+        ##  ALTERE A PARTIR DAQUI!!  ##
+        limiteInterno = 2
+        a = 0
+        b = 1
+        ##  funcaoC, funcaoD e funcao XY devem ser inputadas obrigatoriamente como strings,  ##
+        ##  portanto NAO retire as aspas!!                                                   ##
+        funcaoC = "0" 
+        funcaoD = "1-pow(x,2)"
+        funcaoXY = "1"
+        ##  ALTERE ATE AQUI!!  ##
+
+        print("\nDados inputados diretamente no codigo:")
+        if(limiteInterno==1):
+            print("Integral dupla em dxdy")
+        elif(limiteInterno==2):
+            print("Integral dupla em dydx")
+        print("a = ", a)
+        print("b = ", b)
+        print("c = ", funcaoC)
+        print("d = ", funcaoD)
+        print("funcao(x,y) = ", funcaoXY)
+        print("")
+        if(limiteInterno==1):
+            print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
+        elif(limiteInterno==2):
+            print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
+        print("")
 
     elif(opcaoDesejada==6):
-        a = int(input("Qual o valor do limite de integracao a? "))
-        b = int(input("Qual o valor do limite de integracao b? "))
-        funcaoC = input("Qual a funcao c(x) do limite inferior? ")
-        funcaoD = input("Qual a funcao d(x) do limite superior? ")
-        funcaoXY = input("Qual a funcao em termos de X e Y que se deseja integrar? ")
-        limiteInterno = int(input("A integral mais interna eh em relacao a X ou Y? Digite 1 para X, ou 2 para Y: "))
+        print("\nPreencha agora os campos a, b, c e d, assim como a funcao a ser integrada.\nLembre-se que a e b sao sempre valores numericos, e as funcoes c e d devem\nser inputadas como se voce estivesse digitando-as diretamente no codigo,\npara que o programa transforme-as depois em valores numericos corretamente.\nPor exemplo, x ao quadrado deve ser inserido como pow(x,2). Alem disso,\nqualquer constante eventualmente presente na integral dupla deve ser\nincorporada e inserida na funcao a ser integrada. ATENCAO!!\n")
+        limiteInterno = int(input("A integral mais interna eh em relacao a x ou y? Digite 1 para x, ou 2 para y: "))
+        a = int(input("Qual o valor do limite de integracao externo inferior a? "))
+        b = int(input("Qual o valor do limite de integracao externo superior b? "))
+        funcaoC = input("Qual a funcao c do limite interno inferior? ")
+        funcaoD = input("Qual a funcao d do limite interno superior? ")
+        funcaoXY = input("Qual a funcao em termos de x e y que se deseja integrar? ")
+        print("")
 
-        if (limiteInterno == 1):
-            print("ola")
-        elif (limiteInterno == 2):
-            print("ola2")
-        else:
-            print("Opcao invalida para a integral mais interna. Tente novamente!")
+        if (limiteInterno == 1): ##  Opcao para dxdy.  ##
+            print("Para n = 6,  integral = ", calculaIntegralDuplaDxDy(6,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 8,  integral = ", calculaIntegralDuplaDxDy(8,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 10, integral = ", calculaIntegralDuplaDxDy(10,a,b,funcaoC,funcaoD,funcaoXY))
+        elif (limiteInterno == 2): ##  Opcao para dydx.  ##
+            print("Para n = 6,  integral = ", calculaIntegralDuplaDyDx(6,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 8,  integral = ", calculaIntegralDuplaDyDx(8,a,b,funcaoC,funcaoD,funcaoXY))
+            print("Para n = 10, integral = ", calculaIntegralDuplaDyDx(10,a,b,funcaoC,funcaoD,funcaoXY))
+        
+        print("")
 
 ##  Funcao que resolve integrais duplas, com limite dydx, obrigatoriamente nesta ordem.  ##
 def calculaIntegralDuplaDyDx (n,a,b,funcaoC,funcaoD,funcaoXY):
