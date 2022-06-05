@@ -152,14 +152,6 @@ def main():
             print("ola2")
         else:
             print("Opcao invalida para a integral mais interna. Tente novamente!")
-    #a = 0.1
-    #b = 0.5
-    #funcaoC = "pow(x,3)"
-    #funcaoD = "pow(x,2)"
-    #funcaoXY = "np.sqrt(pow((-y/x)*np.exp(y/x),2)+pow(np.exp(y/x)/x,2)+1)"
-    #print(calculaIntegralDupla(6,a,b,funcaoC,funcaoD,funcaoXY))
-    #print(calculaIntegralDupla(8,a,b,funcaoC,funcaoD,funcaoXY))
-    #print(calculaIntegralDupla(10,a,b,funcaoC,funcaoD,funcaoXY))
 
 def calculaIntegralDupla (n,a,b,funcaoC,funcaoD,funcaoXY):
     ##  Armazenamento dos valores para n = 6,8 e 10, fornecidos nas instrucoes.  ## 
